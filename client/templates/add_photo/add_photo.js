@@ -19,7 +19,8 @@ Template.addPhoto.events({
                         name: name,
                         description: description,
                         image: image,
-                        createdAt: new Date()
+                        createdAt: new Date(),
+                        owner: Meteor.user().username,
                     });
                 }
             });
